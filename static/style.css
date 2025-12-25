@@ -1841,6 +1841,7 @@ button, input, select, a {
     flex: 1;
     min-width: 0;
     overflow: hidden;
+    max-width: 250px;
 }
 
 .feature-card h3 {
@@ -2102,8 +2103,12 @@ button, input, select, a {
     }
     
     .feature-card {
-        gap: 15px;
-        padding: 0 10px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 0;
     }
     
     .feature-frame {
@@ -2120,14 +2125,18 @@ button, input, select, a {
     .feature-text {
         min-width: 0;
         overflow: hidden;
+        width: 100%;
+        text-align: center;
     }
     
     .feature-card h3 {
         font-size: 15px;
+        text-align: center;
     }
     
     .feature-card p {
         font-size: 12px;
+        text-align: center;
     }
     
     .feature-card p {
