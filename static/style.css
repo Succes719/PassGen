@@ -1839,6 +1839,8 @@ button, input, select, a {
 .feature-text {
     text-align: left;
     flex: 1;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .feature-card h3 {
@@ -1847,6 +1849,7 @@ button, input, select, a {
     color: var(--text-primary);
     text-align: left;
     margin: 0;
+    word-break: break-word;
 }
 
 .feature-card p {
@@ -1855,6 +1858,7 @@ button, input, select, a {
     line-height: 1.5;
     text-align: left;
     margin: 6px 0 0 0;
+    word-break: break-word;
 }
 
 /* CTA SECTION */
@@ -2099,11 +2103,13 @@ button, input, select, a {
     
     .feature-card {
         gap: 15px;
+        padding: 0 10px;
     }
     
     .feature-frame {
         width: 100px;
         height: 100px;
+        flex-shrink: 0;
     }
     
     .feature-icon {
@@ -2111,8 +2117,17 @@ button, input, select, a {
         height: 40px;
     }
     
+    .feature-text {
+        min-width: 0;
+        overflow: hidden;
+    }
+    
     .feature-card h3 {
         font-size: 15px;
+    }
+    
+    .feature-card p {
+        font-size: 12px;
     }
     
     .feature-card p {
